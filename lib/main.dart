@@ -1,6 +1,8 @@
+import 'package:fitness_app_live/screens/ageScreen/ageScreen.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/OnBoardingScreen/onBoardingScreen.dart';
+import 'screens/genderScreen/genderScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       color: Colors.black,
       debugShowCheckedModeBanner: false,
-      home: OnBoardingScreen(),
+      home: AgePage(),
     );
   }
 }
