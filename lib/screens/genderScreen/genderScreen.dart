@@ -32,7 +32,11 @@ class _GenderPageState extends State<GenderPage> {
         height: size.height,
         child: Column(
           children: [
-            DetailPageTitle(),
+            const DetailPageTitle(
+              title: "Tell Us ABout Yourself",
+              text: "This will help us to find the best \n content for you",
+              color: Colors.white,
+            ),
             SizedBox(
               height: size.height * 0.055,
             ),

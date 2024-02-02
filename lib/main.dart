@@ -1,4 +1,5 @@
 import 'package:fitness_app_live/screens/ageScreen/ageScreen.dart';
+import 'package:fitness_app_live/screens/heightScreen/heightScreen.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/OnBoardingScreen/onBoardingScreen.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       color: Colors.black,
       debugShowCheckedModeBanner: false,
-      home: AgePage(),
+      home: HeightPage(),
     );
   }
 }
