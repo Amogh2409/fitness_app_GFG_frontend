@@ -69,9 +69,9 @@ class _GenderPageState extends State<GenderPage> {
             DetailPageButton(
               text: "Next",
               onTap: () {
-                
+                Navigator.pushNamed(context, '/age');
               },
-              showBackButton: true,
+              showBackButton: false,
               
             ),
             ],

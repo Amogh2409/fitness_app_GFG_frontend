@@ -1,4 +1,4 @@
-import 'package:fitness_app_live/constants/color.dart';
+
 import 'package:fitness_app_live/models/DetailPageButton.dart';
 import 'package:fitness_app_live/models/DetailPageTitle.dart';
 import 'package:fitness_app_live/models/ListWheelViewScroller.dart';
@@ -44,7 +44,9 @@ class _AgePageState extends State<AgePage> {
               height: size.height * 0.5,
               child: listwheelScrollView(items: items,)
             ),
-            DetailPageButton(text: 'Next', onTap: () {}, showBackButton: true,
+            DetailPageButton(text: 'Next', onTap: () {
+              Navigator.pushNamed(context, '/height');
+            }, showBackButton: true,
             onBackTap: (){
               Navigator.pop(context);
             },),

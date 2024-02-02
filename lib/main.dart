@@ -1,9 +1,11 @@
-import 'package:fitness_app_live/screens/ageScreen/ageScreen.dart';
-import 'package:fitness_app_live/screens/heightScreen/heightScreen.dart';
+import 'package:fitness_app_live/screens/GoalScreen/GoalScreen.dart';
+import 'package:fitness_app_live/screens/OnBoardingScreen/onBoardingScreen.dart';
+
 import 'package:flutter/material.dart';
 
-import 'screens/OnBoardingScreen/onBoardingScreen.dart';
+import 'screens/ageScreen/ageScreen.dart';
 import 'screens/genderScreen/genderScreen.dart';
+import 'screens/heightScreen/heightScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +19,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       color: Colors.black,
+      routes: {
+        '/onboarding': (context) => OnBoardingScreen(),
+        '/gender': (context) => GenderPage(),
+        '/age': (context) => AgePage(),
+        '/height': (context) => HeightPage(),
+        // '/weight': (context) => WeightPage(),
+        // '/activity': (context) => ActivityPage(),
+        '/goal': (context) => GoalPage(),
+      },
       debugShowCheckedModeBanner: false,
-      home: HeightPage(),
+      home: OnBoardingScreen(),
     );
   }
 }
