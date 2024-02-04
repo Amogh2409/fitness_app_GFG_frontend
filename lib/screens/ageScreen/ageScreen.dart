@@ -45,7 +45,7 @@ class _AgePageState extends State<AgePage> {
               child: listwheelScrollView(items: items,)
             ),
             DetailPageButton(text: 'Next', onTap: () {
-              Navigator.pushNamed(context, '/height');
+              Navigator.pushNamed(context, '/weight');
             }, showBackButton: true,
             onBackTap: (){
               Navigator.pop(context);
