@@ -1,4 +1,5 @@
 import 'package:fitness_app_live/screens/GoalScreen/GoalScreen.dart';
+import 'package:fitness_app_live/screens/Login%20signUp/forgotPassword.dart';
 import 'package:fitness_app_live/screens/OnBoardingScreen/onBoardingScreen.dart';
 import 'package:fitness_app_live/screens/activityLevelScreen/activityLevelScreen.dart';
 import 'package:fitness_app_live/screens/weightScreen/WeightScreen.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         '/goal': (context) => GoalPage(),
       },
       debugShowCheckedModeBanner: false,
-      home: WeightPage(),
+      home: ForgotPassword(),
     );
   }
 }

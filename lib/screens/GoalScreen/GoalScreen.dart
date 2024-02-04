@@ -51,7 +51,9 @@ class _GoalPageState extends State<GoalPage> {
               height: size.height * 0.5,
               child: listwheelScrollView(items: items,),
             ),
-            DetailPageButton(text: 'Next', onTap: () {}, showBackButton: true,
+            DetailPageButton(text: 'Next', onTap: () {
+              Navigator.pushNamed(context, '/activity');
+            }, showBackButton: true,
             onBackTap: (){
               Navigator.pop(context);
             },),
