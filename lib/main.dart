@@ -3,6 +3,7 @@ import 'package:fitness_app_live/screens/Login%20signUp/LoginSignup.dart';
 import 'package:fitness_app_live/screens/Login%20signUp/forgotPassword.dart';
 import 'package:fitness_app_live/screens/OnBoardingScreen/onBoardingScreen.dart';
 import 'package:fitness_app_live/screens/activityLevelScreen/activityLevelScreen.dart';
+import 'package:fitness_app_live/screens/homeScreen/homeScreen.dart';
 import 'package:fitness_app_live/screens/weightScreen/WeightScreen.dart';
 
 import 'package:flutter/material.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         
       },
       debugShowCheckedModeBanner: false,
-      home: SignUp(),
+      home: HomePage()
     );
   }
 }
