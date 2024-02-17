@@ -86,6 +86,7 @@ class _WeightPageState extends State<WeightPage> {
             DetailPageButton(
               text: 'Next',
               onTap: () {
+                // userProvider.setWeight(weight);
                 Navigator.pushNamed(context, '/height');
               },
               showBackButton: true,

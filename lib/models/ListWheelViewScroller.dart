@@ -16,6 +16,9 @@ class listwheelScrollView extends StatelessWidget {
         physics: FixedExtentScrollPhysics(),
         controller: FixedExtentScrollController(initialItem: items.length ~/ 2),
         itemExtent: 50,
+        // onSelectedItemChanged: (index) {
+        //   print(index);
+        // },
         diameterRatio: 1.5,
         children: items.map((level) {
           return Text(
