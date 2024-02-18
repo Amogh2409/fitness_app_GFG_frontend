@@ -1,11 +1,10 @@
 import 'package:fitness_app_live/constants/color.dart';
 import 'package:fitness_app_live/constants/padding_margin.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-    
-
   const HomePage({super.key});
 
   @override
@@ -100,11 +99,16 @@ class _HomePageState extends State<HomePage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(
-                      "See All",
-                      style: TextStyle(
-                        fontSize: size.width * 0.04,
-                        color: PrimaryColor,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/workoutCategories');
+                      },
+                      child: Text(
+                        "See All",
+                        style: TextStyle(
+                          fontSize: size.width * 0.04,
+                          color: PrimaryColor,
+                        ),
                       ),
                     ),
                   ],
@@ -137,8 +141,7 @@ class _HomePageState extends State<HomePage> {
                               category,
                               style: TextStyle(
                                 color: selectedCategory ==
-                                        workoutCategories
-                                            .indexOf(category)
+                                        workoutCategories.indexOf(category)
                                     ? Colors.black
                                     : Colors.white,
                               ),
