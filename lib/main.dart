@@ -2,6 +2,7 @@ import 'package:fitness_app_live/screens/GoalScreen/GoalScreen.dart';
 import 'package:fitness_app_live/screens/Login%20signUp/LoginSignup.dart';
 import 'package:fitness_app_live/screens/Login%20signUp/forgotPassword.dart';
 import 'package:fitness_app_live/screens/OnBoardingScreen/onBoardingScreen.dart';
+import 'package:fitness_app_live/screens/ProfilePage/profilePage.dart';
 import 'package:fitness_app_live/screens/activityLevelScreen/activityLevelScreen.dart';
 import 'package:fitness_app_live/screens/homeScreen/Notifications.dart';
 import 'package:fitness_app_live/screens/homeScreen/bottomNavigationbar.dart';
@@ -11,6 +12,8 @@ import 'package:fitness_app_live/screens/workoutCategories.dart';
 
 import 'package:flutter/material.dart';
 
+import 'screens/ProfilePage/PrivacyPolicy.dart';
+import 'screens/ProfilePage/SettingsPage.dart';
 import 'screens/ageScreen/ageScreen.dart';
 import 'screens/genderScreen/genderScreen.dart';
 import 'screens/heightScreen/heightScreen.dart';
@@ -40,10 +43,14 @@ class MyApp extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/notifications': (context) => NotificationPage(),
         '/workoutCategories': (context) => WorkoutCategories(),
+        '/bottomNavigationbar': (context) => HomepageNavbar(),
+        '/profile': (context) => ProfilePage(),
+        '/privacyPolicy': (context) => PrivacyPolicyPage(),
+        '/settings': (context) => SettingsPage(),
         
       },
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: HomepageNavbar(),
     );
   }
 }
