@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   provider: ^6.1.1
   http:
+  calendar_slider: ^0.0.3
 
 dev_dependencies:
   flutter_test:

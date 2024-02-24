@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -174,7 +173,7 @@ class ProfilePage extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
 
             _buildDivider(),
              TextButton(
